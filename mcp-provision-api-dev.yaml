@@ -1,0 +1,32 @@
+server:
+  port: 9008
+  servlet:
+    context-path: /mcp-provision-api/1.0.0
+
+tenent:
+  config:
+    timeZone: GMT-5:00
+    id: 1
+    name: Bike ABC
+    
+mcpcfg:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306,localhost:3306/mcpcfg?autoReconnect=true&amp;autoReconnectForPools=true&amp;failOverReadOnly=false&amp;useSSL=false
+    username: syniverse
+    password: syniverse
+    initialize: true
+    initial-size: 2
+    max-active: 20
+    min-idle: 0
+    max-wait: 60000
+    validation-query: 'SELECT 1'
+    test-on-borrow: false
+    test-while-idle: true
+    pool-prepared-statements: false
+    
+eureka:
+  client:
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://pop1:1111/eureka/
