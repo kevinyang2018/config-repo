@@ -1,7 +1,5 @@
 server:
   port: 9008
-  servlet:
-    context-path: /mcp-provision-api/1.0.0
 
 tenent:
   config:
