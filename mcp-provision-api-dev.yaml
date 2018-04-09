@@ -1,6 +1,3 @@
-server:
-  port: 9008
-
 tenent:
   config:
     timeZone: GMT-5:00
@@ -10,7 +7,7 @@ tenent:
 mcpcfg:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306,localhost:3306/mcpcfg?autoReconnect=true&amp;autoReconnectForPools=true&amp;failOverReadOnly=false&amp;useSSL=false
+    jdbcUrl: jdbc:mysql://localhost:3306,localhost:3306/mcpcfg?autoReconnect=true&amp;autoReconnectForPools=true&amp;failOverReadOnly=false&amp;useSSL=false
     username: syniverse
     password: syniverse
     initialize: true
