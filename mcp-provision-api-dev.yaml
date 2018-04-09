@@ -22,9 +22,3 @@ mcpcfg:
     test-on-borrow: false
     test-while-idle: true
     pool-prepared-statements: false
-    
-eureka:
-  client:
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://pop1:1111/eureka/
